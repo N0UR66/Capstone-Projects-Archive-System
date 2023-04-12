@@ -1,0 +1,44 @@
+﻿@model Department
+
+
+
+<form method="post" asp-action="Delete">
+   
+   @* <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">
+               <i class="bi bi-file-earmark-x"></i> &nbsp Delete Department Category
+                </h2>
+            <br />
+        </div>
+
+        <div class="mb-3">
+            <br />
+            <label asp-for="DepNAME"></label>
+            <br />
+            <input asp-for="DepNAME"  class="form-control"/>
+        </div>*@
+
+@*        max-width: 30rem;
+     mb-3
+*@   
+   <div class="card border-primary" style="position: absolute; top: 50%; left: 50%; margin-top: -90px; margin-left: -200px; ">
+  <div class="card-header">Confirmation Message</div>
+  <div class="card-body">
+    <p class="card-text">Are you sure you want to delete this category?</p>
+        <button type="submit" class="btn btn-danger" style="width:150px;">Delete</button>
+        <a asp-controller="Department" asp-action="Index" class="btn btn-secondary" style="wifth:150px;">Back to List</a>
+  </div>
+</div>
+</form>
+
+       @* <button type="submit" class="btn btn-danger" style="width:150px;">Delete</button>
+        <a asp-controller="Department" asp-action="Index" class="btn btn-secondary" style="wifth:150px;">Back to List</a>
+   *@ @*</div>*@
+
+
+
+@section Scripts
+{
+        <partial name="_ValidationScriptsPartial"></partial>
+}
